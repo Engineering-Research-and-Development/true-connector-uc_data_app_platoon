@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5434:5432
+    volumes:
+      - ./app:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=connector
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=usagecontrol

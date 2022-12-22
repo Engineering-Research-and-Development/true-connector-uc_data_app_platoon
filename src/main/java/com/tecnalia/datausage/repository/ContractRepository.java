@@ -5,25 +5,25 @@
  */
 package com.tecnalia.datausage.repository;
 
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.tecnalia.datausage.model.ContractStore;
-import java.util.List;
-import java.util.Optional;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
+
 /**
  *
  * @author root
  */
 @Repository
 public interface ContractRepository extends JpaRepository<ContractStore, Long> {
-    Optional<ContractStore> findByContractId(String contractId);
-    Optional<ContractStore> findByContractUuid(String contractUuid);
-    Long  deleteByContractUuid(String contractUuid);
-    Iterable<ContractStore> findAllByProviderIdAndConsumerId(String providerId, String consumerId);
-    
-    
- 
-   
+	Optional<ContractStore> findByContractId(String contractId);
+
+	Optional<ContractStore> findByContractUuid(String contractUuid);
+
+	Long deleteByContractUuid(String contractUuid);
+
+	Iterable<ContractStore> findAllByProviderIdAndConsumerId(String providerId, String consumerId);
+
 }

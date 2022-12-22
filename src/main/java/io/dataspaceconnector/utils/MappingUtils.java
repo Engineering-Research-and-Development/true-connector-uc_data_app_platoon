@@ -15,20 +15,8 @@
  */
 package io.dataspaceconnector.utils;
 
-import java.net.URI;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeParseException;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
-
-import de.fraunhofer.iais.eis.Artifact;
-import de.fraunhofer.iais.eis.ConnectorEndpoint;
-import de.fraunhofer.iais.eis.Contract;
-import de.fraunhofer.iais.eis.Representation;
-import de.fraunhofer.iais.eis.Resource;
-import de.fraunhofer.iais.eis.Rule;
 
 //TECNALIA-ICT-OPTIMA: Remove unused methods
 /**

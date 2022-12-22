@@ -5,19 +5,13 @@
  */
 package com.tecnalia.datausage.model;
 
-/**
- *
- * @author root
- */
-import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.util.Objects;
-import javax.persistence.Id;
 
 public class AccessId implements Serializable {
  
-
-    private String targetUri;
+	private static final long serialVersionUID = 1L;
+	private String targetUri;
     private String consumerUri;
 
     public AccessId() {
@@ -27,12 +21,6 @@ public class AccessId implements Serializable {
         this.targetUri = targetUri;
         this.consumerUri = consumerUri;
     }
-
-    
-    
-    
-    
-    
     
     @Override
     public boolean equals(Object o) {
@@ -42,8 +30,6 @@ public class AccessId implements Serializable {
         return targetUri.equals(accessId.targetUri) &&
                 consumerUri.equals(accessId.consumerUri);
     }
-  
-   
 
     @Override
     public int hashCode() {

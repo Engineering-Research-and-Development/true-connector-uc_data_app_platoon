@@ -1,137 +1,128 @@
 package com.tecnalia.datausage.model;
 
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import de.fraunhofer.iais.eis.Permission;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.IdClass;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * ContractStore
  */
-/*@Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2021-03-29T07:44:48.999Z[GMT]")*/
-
-
+/*
+ * @Validated
+ * @javax.annotation.Generated(value =  * "io.swagger.codegen.v3.generators.java.SpringCodegen", date = * "2021-03-29T07:44:48.999Z[GMT]")
+ */
 
 @Entity
 @Table(name = "RuleStore")
 
 //@IdClass(RuleId.class)
-public class RuleStore   {
+public class RuleStore {
 
-    /**
-     * @return the contractUuid
-     */
-    public String getContractUuid() {
-        return contractUuid;
-    }
+	/**
+	 * @return the contractUuid
+	 */
+	public String getContractUuid() {
+		return contractUuid;
+	}
 
-    /**
-     * @param contractUuid the contractUuid to set
-     */
-    public void setContractUuid(String contractUuid) {
-        this.contractUuid = contractUuid;
-    }
+	/**
+	 * @param contractUuid the contractUuid to set
+	 */
+	public void setContractUuid(String contractUuid) {
+		this.contractUuid = contractUuid;
+	}
 
-    /**
-     * @return the ruleUuid
-     */
-    public String getRuleUuid() {
-        return ruleUuid;
-    }
+	/**
+	 * @return the ruleUuid
+	 */
+	public String getRuleUuid() {
+		return ruleUuid;
+	}
 
-    /**
-     * @param ruleUuid the ruleUuid to set
-     */
-    public void setRuleUuid(String ruleUuid) {
-        this.ruleUuid = ruleUuid;
-    }
+	/**
+	 * @param ruleUuid the ruleUuid to set
+	 */
+	public void setRuleUuid(String ruleUuid) {
+		this.ruleUuid = ruleUuid;
+	}
 
-    
- 
-  @JsonProperty("contractUuid")
-  private String contractUuid;
-      
-    
-  @Id
-  @JsonProperty("ruleUuid")
-  private String ruleUuid;
-    
-    
- 
+	@JsonProperty("contractUuid")
+	private String contractUuid;
+
+	@Id
+	@JsonProperty("ruleUuid")
+	private String ruleUuid;
+
 //  @JsonProperty("contractId")
-  private String contractId ;
- 
-  // @JsonProperty("ruleId")
-  private String ruleId ;
+	private String contractId;
 
-  //@JsonProperty("targetId")
-  private String targetId ;
+	// @JsonProperty("ruleId")
+	private String ruleId;
 
- //@JsonProperty("ruleContent")
-   @Column(columnDefinition = "TEXT")
-  private String ruleContent;
+	// @JsonProperty("targetId")
+	private String targetId;
 
-    /**
-     * @return the contractId
-     */
-    public String getContractId() {
-        return contractId;
-    }
+	// @JsonProperty("ruleContent")
+	@Column(columnDefinition = "TEXT")
+	private String ruleContent;
 
-    /**
-     * @param contractId the contractId to set
-     */
-    public void setContractId(String contractId) {
-        this.contractId = contractId;
-    }
+	/**
+	 * @return the contractId
+	 */
+	public String getContractId() {
+		return contractId;
+	}
 
-    /**
-     * @return the ruleId
-     */
-    public String getRuleId() {
-        return ruleId;
-    }
+	/**
+	 * @param contractId the contractId to set
+	 */
+	public void setContractId(String contractId) {
+		this.contractId = contractId;
+	}
 
-    /**
-     * @param ruleId the ruleId to set
-     */
-    public void setRuleId(String ruleId) {
-        this.ruleId = ruleId;
-    }
+	/**
+	 * @return the ruleId
+	 */
+	public String getRuleId() {
+		return ruleId;
+	}
 
-    /**
-     * @return the targetId
-     */
-    public String getTargetId() {
-        return targetId;
-    }
+	/**
+	 * @param ruleId the ruleId to set
+	 */
+	public void setRuleId(String ruleId) {
+		this.ruleId = ruleId;
+	}
 
-    /**
-     * @param targetId the targetId to set
-     */
-    public void setTargetId(String targetId) {
-        this.targetId = targetId;
-    }
+	/**
+	 * @return the targetId
+	 */
+	public String getTargetId() {
+		return targetId;
+	}
 
-    /**
-     * @return the ruleAction
-     */
-    public String getRuleContent() {
-        return ruleContent;
-    }
+	/**
+	 * @param targetId the targetId to set
+	 */
+	public void setTargetId(String targetId) {
+		this.targetId = targetId;
+	}
 
-    /**
-     * @param ruleAction the ruleAction to set
-     */
-    public void setRuleContent(String ruleContent) {
-        this.ruleContent = ruleContent;
-    }
+	/**
+	 * @return the ruleAction
+	 */
+	public String getRuleContent() {
+		return ruleContent;
+	}
 
+	/**
+	 * @param ruleAction the ruleAction to set
+	 */
+	public void setRuleContent(String ruleContent) {
+		this.ruleContent = ruleContent;
+	}
 
-
- }
+}

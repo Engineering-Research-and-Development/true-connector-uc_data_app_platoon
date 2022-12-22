@@ -14,28 +14,30 @@ import java.util.Objects;
 
 public class RuleId implements Serializable {
 
-    private String contractUuid;
-    private String ruleUuid;
+	private static final long serialVersionUID = 1L;
+	private String contractUuid;
+	private String ruleUuid;
 
-    public RuleId() {
-    }
+	public RuleId() {
+	}
 
-    public RuleId(String contractUuid, String ruleUuid) {
-        this.contractUuid = contractUuid;
-        this.ruleUuid = ruleUuid;
-    }
+	public RuleId(String contractUuid, String ruleUuid) {
+		this.contractUuid = contractUuid;
+		this.ruleUuid = ruleUuid;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        RuleId ruleId = (RuleId) o;
-        return contractUuid.equals(ruleId.contractUuid) &&
-                ruleUuid.equals(ruleId.ruleUuid);
-    }
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
+		RuleId ruleId = (RuleId) o;
+		return contractUuid.equals(ruleId.contractUuid) && ruleUuid.equals(ruleId.ruleUuid);
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(contractUuid, ruleUuid);
-    }
+	@Override
+	public int hashCode() {
+		return Objects.hash(contractUuid, ruleUuid);
+	}
 }

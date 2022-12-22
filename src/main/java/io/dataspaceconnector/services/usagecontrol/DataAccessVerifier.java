@@ -15,6 +15,13 @@
  */
 package io.dataspaceconnector.services.usagecontrol;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
 import de.fraunhofer.iais.eis.Rule;
 import io.dataspaceconnector.exceptions.PolicyExecutionException;
 import io.dataspaceconnector.exceptions.PolicyRestrictionException;
@@ -22,13 +29,6 @@ import io.dataspaceconnector.utils.RuleUtils;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.stereotype.Component;
-
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
 
 /**
  * A {@link PolicyVerifier} implementation that checks whether data access should be allowed.

@@ -15,20 +15,11 @@
  */
 package io.dataspaceconnector.services.usagecontrol;
 
-import de.fraunhofer.iais.eis.ContractAgreement;
-import de.fraunhofer.iais.eis.Permission;
-import de.fraunhofer.iais.eis.Rule;
-import io.dataspaceconnector.exceptions.PolicyExecutionException;
-import io.dataspaceconnector.utils.RuleUtils;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
-import java.net.URI;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import io.dataspaceconnector.exceptions.PolicyExecutionException;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 
 //TECNALIA-ICT-OPTIMA: Comment out the methods, so that they do nothing.
 /**

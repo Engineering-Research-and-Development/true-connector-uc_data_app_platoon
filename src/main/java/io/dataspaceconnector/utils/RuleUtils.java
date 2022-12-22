@@ -15,20 +15,6 @@
  */
 package io.dataspaceconnector.utils;
 
-import de.fraunhofer.iais.eis.Action;
-import de.fraunhofer.iais.eis.BinaryOperator;
-import de.fraunhofer.iais.eis.Constraint;
-import de.fraunhofer.iais.eis.ConstraintImpl;
-import de.fraunhofer.iais.eis.LeftOperand;
-import de.fraunhofer.iais.eis.Permission;
-import de.fraunhofer.iais.eis.Prohibition;
-import de.fraunhofer.iais.eis.Rule;
-import de.fraunhofer.iais.eis.ids.jsonld.Serializer;
-import io.dataspaceconnector.exceptions.InvalidInputException;
-import io.dataspaceconnector.model.TimeInterval;
-import io.dataspaceconnector.services.usagecontrol.PolicyPattern;
-import lombok.extern.log4j.Log4j2;
-
 import java.net.URI;
 import java.text.ParseException;
 import java.time.ZoneOffset;
@@ -38,8 +24,22 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
+
+import de.fraunhofer.iais.eis.Action;
+import de.fraunhofer.iais.eis.BinaryOperator;
+import de.fraunhofer.iais.eis.Constraint;
+import de.fraunhofer.iais.eis.ConstraintImpl;
+import de.fraunhofer.iais.eis.LeftOperand;
+import de.fraunhofer.iais.eis.Permission;
+import de.fraunhofer.iais.eis.Prohibition;
+import de.fraunhofer.iais.eis.Rule;
+import io.dataspaceconnector.exceptions.InvalidInputException;
+import io.dataspaceconnector.model.TimeInterval;
+import io.dataspaceconnector.services.usagecontrol.PolicyPattern;
+import lombok.extern.log4j.Log4j2;
 
 //TECNALIA-ICT-OPTIMA: Remove unused methods
 /**

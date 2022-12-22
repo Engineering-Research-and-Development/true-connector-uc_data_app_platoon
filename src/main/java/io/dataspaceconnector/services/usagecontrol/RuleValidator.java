@@ -15,28 +15,25 @@
  */
 package io.dataspaceconnector.services.usagecontrol;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.util.Date;
+
+import javax.xml.datatype.DatatypeConfigurationException;
+
+import org.springframework.stereotype.Service;
+
 import de.fraunhofer.iais.eis.Rule;
 import io.dataspaceconnector.exceptions.PolicyRestrictionException;
 import io.dataspaceconnector.model.TimeInterval;
 import io.dataspaceconnector.utils.ErrorMessages;
 import io.dataspaceconnector.utils.RuleUtils;
-import java.io.UnsupportedEncodingException;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.stereotype.Service;
-
-import java.net.URI;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
-import java.text.ParseException;
-import java.time.Duration;
-import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import javax.xml.datatype.DatatypeConfigurationException;
 
 //TECNALIA-ICT-OPTIMA: Remove and add new methods.
 /**

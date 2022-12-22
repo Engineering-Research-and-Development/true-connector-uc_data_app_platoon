@@ -1,1 +1,6 @@
 /target/
+/app/**
+.classpath
+.factorypath
+.project
+.settings/

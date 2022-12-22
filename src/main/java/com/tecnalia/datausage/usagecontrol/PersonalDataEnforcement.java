@@ -31,7 +31,8 @@ import org.springframework.stereotype.Component;
  * @author usuario
  */
 @Component
-@PropertySource("file:/etc/platoon_datausage_cape.properties")
+@PropertySource("classpath:platoon_datausage_cape.properties")
+//@PropertySource("file:/etc/platoon_datausage_cape.properties")
 public class PersonalDataEnforcement {
     @Value("${cape.enforce.usage.url}")
     private String enforceConsentsUrl = "";
@@ -104,7 +105,6 @@ public class PersonalDataEnforcement {
         userId = jsonContext.read(userIdPath);        
         return userId;
     }
-
 
     public JSONObject enforceConsents(String consumerURI, String providerURI,
                             String userId, String targetDataUri, String consumerPurpose, 

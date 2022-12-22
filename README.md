@@ -45,8 +45,18 @@ The data Usage Control module supports usage policies written in the IDS Usage C
 ## 3  Installation Guide
 
 
+### 3.1 Creating Docker image
 
-### 3.1 Running the Application
+From root of the project run following command:
+
+```
+docker build .
+
+```
+
+This will create docker image; specific tag can also be added to the command simply by using *-t {tag:version}* 
+
+### 3.2 Running the Application
 
 To start up the Platoon Data Usage, run the following command inside the directory "Docker_Tecnalia_DataUsage" of the docker-compose.yml file: docker-compose up -d
 
