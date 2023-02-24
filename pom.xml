@@ -229,7 +229,7 @@
                 <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-       <!-- Postgres Database -->
+       <!-- Posgres Database -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
