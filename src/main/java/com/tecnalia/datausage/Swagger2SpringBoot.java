@@ -11,6 +11,6 @@ public class Swagger2SpringBoot {
 
 	public static void main(String[] args) throws Exception {
 		new SpringApplication(Swagger2SpringBoot.class).run(args);
-	}
+	}   
 
 }
