@@ -193,6 +193,7 @@ public final class RuleUtils {
      *
      * @param rule the policy rule object.
      * @return the time interval.
+     * @throws ParseException exception
      */
     public static TimeInterval getTimeInterval(final Rule rule) throws ParseException {
         final var interval = new TimeInterval();

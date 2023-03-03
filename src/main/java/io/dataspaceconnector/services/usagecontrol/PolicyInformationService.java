@@ -41,8 +41,9 @@ public class PolicyInformationService {
 
     /**
      * Get access number of artifact.
-     *
-     * @param target The target id.
+     * @param pipEndpoint pipEndpoint
+     * @param targetId  The target id.
+     * @param consumerUri consumer URI
      * @return The artifact's access number.
      */
     public long getAccessNumber(final URI pipEndpoint, final String targetId, final String consumerUri) {
@@ -61,7 +62,7 @@ public class PolicyInformationService {
 
     /**
      * Get remote info.
-     *
+     * @param pipEndpoint pip Endpoint
      * @return The info.
      */
     public String getRemoteInfo(final String pipEndpoint) {

@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "RuleStore")
-
 //@IdClass(RuleId.class)
 public class RuleStore {
 
@@ -119,7 +118,7 @@ public class RuleStore {
 	}
 
 	/**
-	 * @param ruleAction the ruleAction to set
+	 * @param ruleContent the ruleContent to set
 	 */
 	public void setRuleContent(String ruleContent) {
 		this.ruleContent = ruleContent;

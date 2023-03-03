@@ -129,8 +129,8 @@ public class HttpUtils {
      * Sends a POST request to an external HTTP endpoint
      *
      * @param address the URL.
-     * @param params
-     * @param jsonData
+     * @param params additional parameters
+     * @param jsonData payload part
      * @return the HTTP response if HTTP code is OK (200).
      * @throws URISyntaxException if the input address is not a valid URI.
      * @throws RuntimeException if an error occurred when connecting or processing the HTTP
@@ -188,7 +188,7 @@ public class HttpUtils {
      * Sends a POST request to an external HTTP endpoint
      *
      * @param address the URL.
-     * @param params
+     * @param params additional parameters
      * @return the HTTP response if HTTP code is OK (200).
      * @throws URISyntaxException if the input address is not a valid URI.
      * @throws RuntimeException if an error occurred when connecting or processing the HTTP
@@ -250,12 +250,12 @@ public class HttpUtils {
      * Sends a POST request to an external HTTP endpoint
      *
      * @param address the URL.
-     * @param params
-     * @param jsonData
-     * @param authServerUrl
-     * @param authClientId
-     * @param authClientSecret
-     * @param authGrantType
+     * @param params additional parameters
+     * @param jsonData payload part
+     * @param authServerUrl authorization server URL
+     * @param authClientId authorization clientId
+     * @param authClientSecret authorization clientSecret
+     * @param authGrantType authorization grant type
      * @return the HTTP response if HTTP code is OK (200).
      * @throws URISyntaxException if the input address is not a valid URI.
      * @throws RuntimeException if an error occurred when connecting or processing the HTTP
