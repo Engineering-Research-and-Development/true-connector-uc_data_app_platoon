@@ -1,20 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
-
-## [1.0.3-SNAPSHOT] - 2023-04-20
-
-### Changed
  
- - Upgraded infomodel to 4.2.7.
- - Fixed bug in RuleUtils when enforcing policy 
- 
- 
-## [1.0.2-SNAPSHOT] - 2023-03-08
+## [1.0.2-SNAPSHOT] - 2023-04-21
 
 ### Changed
  
  - Switch to temurin base docker image
  - using non root user for java process
+ - Upgraded infomodel to 4.2.7.
+ - Fixed bug in RuleUtils when enforcing policy 
 
 ## [1.0.1] - 2023-02-??
 
