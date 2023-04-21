@@ -23,7 +23,6 @@ jobs:
     - name: Build with Maven
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_PACKAGE_REPO_PASSWORD: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
       run: mvn -B package --file pom.xml
     - name: Setup Docker buildx
       uses: docker/setup-buildx-action@v1.6.0
